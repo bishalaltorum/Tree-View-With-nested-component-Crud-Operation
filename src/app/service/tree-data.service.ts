@@ -10,23 +10,23 @@ export class TreeDataService {
   _dataChange = new BehaviorSubject<TreeData[]>(
     [{
       Id: 1,
-      Name: 'John Heart 1',
-      Description: 'Father 1',
+      Name: 'Product 1',
+      Description: 'This is a product',
       Children: [
         {
-          Id: 3,
-          Name: 'Ken Bond 1',
+          Id: 2,
+          Name: 'Sub product 1',
           Description: 'Children 1',
           Children: []
         },
         {
-          Id: 4,
-          Name: 'Ken Bond 2',
+          Id: 3,
+          Name: 'Sub Product 2',
           Description: 'Children 2',
           Children: [
             {
-              Id: 5,
-              Name: 'Vaggelis Awesome 1',
+              Id: 4,
+              Name: 'Sub Sub Product 1',
               Description: 'GrandChildren 1',
               Children: []
             }
@@ -34,19 +34,6 @@ export class TreeDataService {
         }
       ]
     },
-    {
-      Id: 2,
-      Name: 'John Heart 2',
-      Description: 'Father 2',
-      Children: [
-        {
-          Id: 6,
-          Name: 'Ken Bond 1',
-          Description: 'Children 1',
-          Children: []
-        }
-      ]
-    }
   ]
   );
 
